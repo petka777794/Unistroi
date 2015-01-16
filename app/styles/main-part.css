@@ -17,7 +17,7 @@
 
 .logo {
     display: block;
-    float: right;
+    float: none;
     margin-left: auto;
     margin-right: auto;
 }
@@ -57,6 +57,7 @@
     display: block;
     float: right;
     padding-left: 23px;
+    font-style: italic;
 }
 .phone-number-main-velcom {
     background: url(../images/velcom.jpg) no-repeat;
@@ -67,6 +68,7 @@
     display: block;
     float: right;
     padding-left: 27px;
+    font-style: italic;
 }
 .common-logotip {
     max-width: 730px;
@@ -82,37 +84,35 @@
     margin-right: auto;
     /*width: 70%;*/
 }
-@media only screen and (max-width: 400px) {
-    body {  }
+
+@media only screen and (max-width: 1368px){
+    .body-width {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 482px){
     .phone-number-main-mts {
-        background: url(../images/mts.jpg) no-repeat;
-        background-size: 10% auto;
-        background-position: left center;
-        text-align: right;
-        width: auto;
-        display: block;
-        float: none;
-        padding-left: 17px;
+        font-size: 0.8em;
+    }
+    .phone-number-main-velcom {
+        font-size: 0.8em;
+    }
+    .content {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 385px) {
+    .phone-number-main-mts {
         font-size: 0.6em;
     }
     .phone-number-main-velcom {
-        background: url(../images/velcom.jpg) no-repeat;
-        background-size: 12% auto;
-        background-position: left center;
-        text-align: right;
-        width: auto;
-        display: block;
-        float: none;
-        padding-left: 19px;
         font-size: 0.6em;
     }
     .min-logo {
-        width: 100%; !important;
+        width: 100% !important;
         float: none;
     }
-}
-@media only screen and (max-width: 1368px){
-    .body-width {
+    .content {
         width: 100%;
     }
 }

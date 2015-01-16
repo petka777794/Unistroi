@@ -1,5 +1,5 @@
 {
-  "name": "unistroy",
+  "name": "unistroi",
   "version": "0.0.1",
   "dependencies": {
     "express": "^4.11.0",
@@ -8,7 +8,10 @@
     "nodemailer": "^1.3.0"
   },
   "description": "unistroi.by",
-  "repository" :"firebase",
+  "repository": {
+    "type": "git",
+    "url": "firebase"
+  },
   "devDependencies": {
     "chalk": "^0.4.0",
     "grunt": "^0.4.5",
@@ -45,5 +48,11 @@
   },
   "scripts": {
     "test": "grunt test"
-  }
+  },
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "MIT"
 }
