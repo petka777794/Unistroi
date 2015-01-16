@@ -21,105 +21,126 @@
     
 </head>
 <body ng-app="unibuildApp">
-<!--[if lt IE 7]>
-<p class="browsehappy">Вы используете <strong>очень старый</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите свой браузер</a> чтобы улучшить свои возможности.</p>
-<![endif]-->
+<div class="content">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используете <strong>очень старый</strong> браузер. Пожалуйста <a
+            href="http://browsehappy.com/">обновите свой браузер</a> чтобы улучшить свои возможности.</p>
+    <![endif]-->
 
-<!-- Add your site or application content here -->
-<div class="container body-width">
-    <div>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" ng-href="#/">Главная</a>
-                </div>
+    <!-- Add your site or application content here -->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 common-logotip">
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a ng-href="#/rent" >Аренда<span class="sr-only">(current)</span></a></li>
-                        <li><a ng-href="#/transportation">Грузоперевозки</a></li>
-                        <li><a ng-href="#/build">Строительные работы</a></li>
-                        <li><a ng-href="#/contact">Контакты</a></li>
-                    </ul>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 display-right">
+            <!--<div class="clear"></div>-->
+            <a class="logo" ng-href="#/">
+                <!--<div class="clear"></div>-->
+                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 logo min-logo">
+                    <img alt="Brand" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logo" src="images/logo.png">
                 </div>
-                <!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 phone-block">
-        <div class="phone-number-main-velcom col-xs-12 col-sm-12 col-md-12 col-lg-12">+375 44 588-75-15</div>
-        <div class="clear"></div>
-        <div class="phone-number-main-mts col-xs-12 col-sm-12 col-md-12 col-lg-12">+375 33 670-01-97</div>
-    </div>
-    <div class="clear"></div>
-    <a class="logo" ng-href="#/">
-        <div class="col-xs-9 col-sm-7 col-md-6 col-lg-6 logo">
-            <img alt="Brand" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logo" src="images/logo.png">
+            </a>
         </div>
-    </a>
-    <div ng-view=""></div>
-
-    <div class="footer">
-        <!--<p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>-->
+        <!--<div class="clear"></div>-->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 phone-block">
+            <div class="phone-number-main-velcom col-xs-12 col-sm-12 col-md-12 col-lg-12">+375(44)&nbsp&nbsp588 75 15
+            </div>
+            <div class="clear"></div>
+            <div class="phone-number-main-mts col-xs-12 col-sm-12 col-md-12 col-lg-12">+375(33)&nbsp&nbsp670 01 97</div>
+        </div>
+        <div class="clear"></div>
     </div>
-</div>
+    <div class="container body-width">
+        <div>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" ng-href="#/">Главная</a>
+                    </div>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.nav li a').on('click', function() {
-            $(this).parent().parent().find('.active').removeClass('active');
-            $(this).parent().addClass('active');
-        });
-        $('a.navbar-brand').on('click', function() {
-            $(this).parent().parent().find('.active').removeClass('active');
-        });
-        $('a.logo').on('click', function() {
-            $(this).parent().parent().find('.active').removeClass('active');
-        });
-    });
-</script>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a ng-href="#/rent">Аренда<span class="sr-only">(current)</span></a></li>
+                            <li><a ng-href="#/transportation">Грузоперевозки</a></li>
+                            <li><a ng-href="#/build">Строительные работы</a></li>
+                            <li><a ng-href="#/contact">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <div ng-view=""></div>
 
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
-</script>
+        <div class="footer">
+            <!--<p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>-->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.nav li a').on('click', function () {
+                $(this).parent().parent().find('.active').removeClass('active');
+                $(this).parent().addClass('active');
+            });
+            $('a.navbar-brand').on('click', function () {
+                $(this).parent().parent().find('.active').removeClass('active');
+            });
+            $('a.logo').on('click', function () {
+                $(this).parent().parent().find('.active').removeClass('active');
+            });
+        });
+    </script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>
 
     <script src="scripts/emailapp.js"></script>
-	<script src="bower_component/angular/angular.min.js"></script>
-	<script src="bower_component/bootstrap/dist/js/bootstrap.js"></script>
-	<script src="bower_component/angular-resource/angular-resource.js"></script>
-	<script src="bower_component/angular-cookies/angular-cookies.js"></script>
-	<script src="bower_component/angular-sanitize/angular-sanitize.js"></script>
-	<script src="bower_component/angular-animate/angular-animate.js"></script>
-	<script src="bower_component/angular-touch/angular-touch.js"></script>
-	<script src="bower_component/angular-route/angular-route.js"></script>
-	<script src="bower_component/firebase/firebase.js"></script>
-	<script src="bower_component/angularfire/dist/angularfire.js"></script>
-	<!-- endbower -->
-	<!-- endbuild -->
+    <script src="bower_component/angular/angular.min.js"></script>
+    <script src="bower_component/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_component/angular-resource/angular-resource.js"></script>
+    <script src="bower_component/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_component/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_component/angular-animate/angular-animate.js"></script>
+    <script src="bower_component/angular-touch/angular-touch.js"></script>
+    <script src="bower_component/angular-route/angular-route.js"></script>
+    <script src="bower_component/firebase/firebase.js"></script>
+    <script src="bower_component/angularfire/dist/angularfire.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
-	<!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
 
-	<script src="scripts/app.js"></script>
-	<script src="scripts/controllers/main.js"></script>
-	<script src="scripts/controllers/build.js"></script>
-	<script src="scripts/controllers/contact.js"></script>
-	<script src="scripts/controllers/rent.js"></script>
-	<script src="scripts/controllers/transportation.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/build.js"></script>
+    <script src="scripts/controllers/contact.js"></script>
+    <script src="scripts/controllers/rent.js"></script>
+    <script src="scripts/controllers/transportation.js"></script>
     <!-- endbuild -->
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
@@ -132,5 +153,6 @@
     <!-- bower:js -->
 
     <!-- endbuild -->
+</div>
 </body>
 </html>

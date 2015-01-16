@@ -2,6 +2,16 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background: url(../images/fon.png) repeat-x;
+    min-width: 320px;
+}
+.content {
+    display: block;
+    float: none;
+    background: #ffffff;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

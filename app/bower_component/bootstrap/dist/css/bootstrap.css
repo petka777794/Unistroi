@@ -3837,12 +3837,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
-@media (min-width: 934px) {
+@media (min-width: 1200px) {
   .navbar {
     border-radius: 4px;
   }
 }
-@media (min-width: 934px) {
+@media (min-width: 1200px) {
   .navbar-header {
     float: left;
   }
@@ -3859,7 +3859,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 934px) {
+@media (min-width: 1200px) {
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -3984,7 +3984,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 934px) {
+@media (min-width: 1200px) {
   .navbar-toggle {
     display: none;
   }
@@ -4020,7 +4020,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background-image: none;
   }
 }
-@media (min-width: 934px) {
+@media (min-width: 1200px) {
   .navbar-nav {
     float: left;
     margin: 0;
@@ -4165,6 +4165,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   /*background-color: #f8f8f8;*/
   border-color: #ff0d00;
   /*border-color: #e7e7e7;*/
+  margin-top: 2%;
 }
 .navbar-default .navbar-brand {
   /*color: #777;*/
