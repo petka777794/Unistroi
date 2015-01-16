@@ -1,0 +1,65 @@
+.indent {
+    margin-top: 2%;
+}
+
+.header-menu {
+    height: auto;
+    /*width: 100%;*/
+}
+
+.clear {
+    clear: both;
+}
+
+.body-width {
+    width: 70%;
+}
+
+.logo {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.display-block {
+    display: block;
+    float: left;
+}
+
+.color-text {
+    color: #000000;
+}
+
+.text {
+    text-align: justify;
+}
+.phone-block {
+    display: block;
+    float: right;
+    /*background: url(../images/phone.jpg) no-repeat;*/
+    background-size: 15% auto;
+    background-position: left center;
+    width: auto;
+    font-size: 1.2em;
+}
+.phone-number-main-mts {
+    background: url(../images/mts.jpg) no-repeat;
+    background-size: 10% auto;
+    background-position: left center;
+    text-align: right;
+    width: auto;
+    display: block;
+    float: right;
+    padding-left: 20px;
+}
+.phone-number-main-velcom {
+    background: url(../images/velcom.jpg) no-repeat;
+    background-size: 12% auto;
+    background-position: left center;
+    text-align: right;
+    width: auto;
+    display: block;
+    float: right;
+    padding-left: 24px;
+}
