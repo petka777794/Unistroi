@@ -17,7 +17,7 @@
 
 .logo {
     display: block;
-    float: none;
+    float: right;
     margin-left: auto;
     margin-right: auto;
 }
@@ -25,6 +25,10 @@
 .display-block {
     display: block;
     float: left;
+}
+.display-right {
+    display: block;
+    float: right;
 }
 
 .color-text {
@@ -36,12 +40,13 @@
 }
 .phone-block {
     display: block;
-    float: right;
+    float: left;
     /*background: url(../images/phone.jpg) no-repeat;*/
     background-size: 15% auto;
     background-position: left center;
     width: auto;
     font-size: 1.2em;
+    margin-top: 10%;
 }
 .phone-number-main-mts {
     background: url(../images/mts.jpg) no-repeat;
@@ -51,7 +56,7 @@
     width: auto;
     display: block;
     float: right;
-    padding-left: 20px;
+    padding-left: 23px;
 }
 .phone-number-main-velcom {
     background: url(../images/velcom.jpg) no-repeat;
@@ -61,5 +66,53 @@
     width: auto;
     display: block;
     float: right;
-    padding-left: 24px;
+    padding-left: 27px;
+}
+.common-logotip {
+    max-width: 730px;
+    background: #ffffff;
+    /* z-index: 1000; */
+    /* padding: 0; */
+    /*border: 1px solid red;*/
+    border-radius: 5px;
+    display: block;
+    float: none;
+    /*max-height: 143px;*/
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 70%;*/
+}
+@media only screen and (max-width: 400px) {
+    body {  }
+    .phone-number-main-mts {
+        background: url(../images/mts.jpg) no-repeat;
+        background-size: 10% auto;
+        background-position: left center;
+        text-align: right;
+        width: auto;
+        display: block;
+        float: none;
+        padding-left: 17px;
+        font-size: 0.6em;
+    }
+    .phone-number-main-velcom {
+        background: url(../images/velcom.jpg) no-repeat;
+        background-size: 12% auto;
+        background-position: left center;
+        text-align: right;
+        width: auto;
+        display: block;
+        float: none;
+        padding-left: 19px;
+        font-size: 0.6em;
+    }
+    .min-logo {
+        width: 100%; !important;
+        float: none;
+    }
+}
+@media only screen and (max-width: 1368px){
+    .body-width {
+        width: 100%;
+    }
 }
